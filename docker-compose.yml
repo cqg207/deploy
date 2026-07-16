@@ -4,3 +4,6 @@ service:
     image: nginx
     ports:
       - "8080:80"
+services:
+  nginx:
+    image: cqg207/docker-cicd:202607161200
