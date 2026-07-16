@@ -4,6 +4,26 @@ service:
     image: nginx
     ports:
       - "8080:80"
+
 services:
   nginx:
     image: cqg207/docker-cicd:202607161322
+
+name: Docker Compose Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  docker-compose:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Build and start services
+        run: docker-compose up -d
+
