@@ -6,4 +6,4 @@ service:
       - "8080:80"
 services:
   nginx:
-    image: cqg207/docker-cicd:202607161312
+    image: cqg207/docker-cicd:202607161322
