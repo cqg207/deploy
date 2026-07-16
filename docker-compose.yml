@@ -1,6 +1,6 @@
 version: '3'
 services:
-   nginx:
-     image: cqg207/docker-cicd:202607161322
-     ports:
-       - "8080:80"
+  nginx:
+    image: cqg207/docker-cicd:202607161628
+    ports:
+      - "8080:80"
